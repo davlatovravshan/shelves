@@ -1,6 +1,8 @@
 @import "header.css";
 @import "skills.css";
 @import "order.css";
+@import "wares.css";
+@import "stages.css";
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -58,7 +60,7 @@ img {
 
 .main-btn:hover {
     /*background: #E86B21;*/
-    color: #FFFFFF;
+    /*color: #FFFFFF;*/
     transition: background 0.1s ease;
 }
 
@@ -74,5 +76,15 @@ img {
         font-size: 14px;
         line-height: 16px;
     }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .wrapper {
+        padding: 0 15px;
+    }
+
 
 }
