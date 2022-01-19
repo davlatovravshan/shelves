@@ -75,9 +75,11 @@
 
 .banner_wrapper {
     padding: 250px 0;
+    padding-left: 45px;
 }
 
 .banner-title {
+    position: relative;
     font-weight: 600;
     font-size: 48px;
     line-height: 56px;
@@ -94,6 +96,15 @@
     line-height: 23px;
 
     color: #FFFFFF;
+}
+
+.banner-line {
+    position: absolute;
+    left: -45px;
+    top: 25px;
+    width: 35px;
+    height: 4px;
+    background: #E86B21;
 }
 
 
@@ -137,6 +148,11 @@
     .header-btn {
         margin-left: 30px;
     }
+
+    .banner-title {
+        font-size: 36px;
+        line-height: 42px;
+    }
 }
 
 
@@ -150,6 +166,11 @@
         display: none;
     }
 
+
+    .banner_wrapper {
+        padding: 168px 0 140px 0;
+        padding-left: 45px;
+    }
 }
 
 
@@ -174,15 +195,25 @@
         margin-left: 20px;
     }
 
-}
+    .banner-title {
+        font-size: 28px;
+        line-height: 33px;
+    }
 
-@media (max-width: 768px) {
+    .banner-text {
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 24px;
+    }
+
     .header-btn {
         display: none;
     }
+
 }
 
-@media (max-width: 400px) {
+
+@media (max-width: 480px) {
     .logo {
         display: none;
     }
@@ -192,5 +223,27 @@
     }
     .phone {
         margin-left: 0;
+    }
+
+    .banner_wrapper {
+        text-align: center;
+        padding: 30px 0;
+        padding-left: 0;
+    }
+
+    .banner-line {
+        display: none;
+    }
+
+    .banner-title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .banner-text {
+        width: 60%;
+        font-size: 14px;
+        line-height: 16px;
+        margin: 10px auto 17px auto;
     }
 }
