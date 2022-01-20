@@ -3,6 +3,8 @@
 @import "order.css";
 @import "wares.css";
 @import "stages.css";
+@import "products.css";
+@import "about.css";
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -64,6 +66,10 @@ img {
     transition: background 0.1s ease;
 }
 
+.md {
+    display: none;
+}
+
 
 @media (max-width: 768px) {
 
@@ -77,13 +83,24 @@ img {
         line-height: 16px;
     }
 
+
+
+
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
 
     .wrapper {
         padding: 0 15px;
+    }
+
+    .md {
+        display: block;
+    }
+
+    .md-none {
+        display: none;
     }
 
 
