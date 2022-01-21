@@ -5,6 +5,8 @@
 @import "stages.css";
 @import "products.css";
 @import "about.css";
+@import "why.css";
+@import "contacts.css";
 
 * {
     font-family: 'Roboto', sans-serif;
