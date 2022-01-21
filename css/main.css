@@ -7,6 +7,7 @@
 @import "about.css";
 @import "why.css";
 @import "contacts.css";
+@import "questions.css";
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -32,6 +33,10 @@ a {
 
 img {
     max-width: 100%;
+}
+
+input:focus, button:focus {
+    outline: none;
 }
 
 

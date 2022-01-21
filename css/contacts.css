@@ -56,7 +56,6 @@
 
     .contacts-item_wrapper {
         padding: 30px;
-        flex-basis: auto;
     }
 
 }
@@ -71,10 +70,6 @@
 
     .contacts-title {
         margin-bottom: 24px;
-    }
-
-    .contacts-row {
-        justify-content: space-between;
     }
 
     .contacts-option {
@@ -92,5 +87,22 @@
 
     .contacts-item_wrapper {
         padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .contacts-row {
+        justify-content: space-around;
+    }
+
+    .contacts-item_wrapper {
+        padding: 10px;
+        flex-basis: auto;
+    }
+
+    .contacts-item_wrapper:last-child {
+        margin: 0 auto;
+        width: 70%;
     }
 }
