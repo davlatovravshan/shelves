@@ -23,47 +23,53 @@
 .stages-cards {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 	flex-wrap: wrap;
 }
+
+.stages-card_wrapper {
+	flex-basis: calc(100% / 3);
+	padding: 15px;
+}
+
 .stages-card {
-	width: 370px;
 	display: flex;
-	margin: 0 20px 80px 20px;
+	align-items: center;
 }	
 .stages-img_block {
-	min-width: 100px;
+	min-width: 60px;
+	max-width: 60px;
+	height: 60px;
 	margin-right: 20px;
 }
 
 .stages-card_content {}
 .stages-card_title {
 	font-weight: 500;
-	font-size: 20px;
-	line-height: 23px;
+	font-size: 18px;
+	line-height: 22px;
 	color: #E86B21;
 	margin-bottom: 10px;
 }
 .stages-card_text {
 	font-weight: 500;
-	font-size: 18px;
-	line-height: 21px;
+	font-size: 16px;
+	line-height: 20px;
 	color: #FFFFFF;
 }
 
 
+@media (max-width: 992px) {
+	.stages-card_wrapper {
+		flex-basis: calc(100% / 2);
+		padding: 15px;
+	}
+}
 
 
 @media (max-width: 768px) {
 
-	.stages-card {
-		width: calc(50% - 20px);
-		display: flex;
-		text-align: center;
-		flex-direction: column;
-		margin: 0 10px 50px 10px;
-	}	
-
+	
 	.stages-card_title, .stages-card_text {
 		font-size: 14px;
 		line-height: 14px;
@@ -80,27 +86,40 @@
 		line-height: 15px;
 	}
 
+	.stages-img_block {
+		margin-right: 0;
+	}
+
 }
 
 @media (max-width: 576px) {
+
+	.stages-card_wrapper {
+		padding: 20px 5px;
+	}
+
+	.stages-card {
+		flex-direction: column;
+	}
+
+	.stages-card_content {
+		text-align: center;
+	}
 
 	.stages_wrapper {
 		padding: 30px 0;
 	}
 
-	.stages-card {
-		width: calc(100% - 20px);
-		display: flex;
-		text-align: center;
-		flex-direction: column;
-		margin: 0 10px 30px 10px;
+	.stages-card_title {
+		font-size: 12px;
+		line-height: 14px;
 	}
 
 	.stages-card_text {
-		width: 60%;
-		margin: 0 auto;
+		font-size: 12px;
+		line-height: 14px;
 	}
-
+	
 	.stages-title_block {
 		margin-bottom: 20px;
 	}

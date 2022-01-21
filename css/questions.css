@@ -64,13 +64,15 @@
 
 }
 
-.inputs {
-    display: flex;
-    flex-direction: column;
-}
+
 
 
 @media (max-width: 992px) {
+
+    .inputs {
+        display: flex;
+        flex-direction: column;
+    }
 
     .questions_wrapper {
         justify-content: center;

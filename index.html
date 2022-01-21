@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<!--<header id="header">
+<header id="header">
 
     <div class="header_wrapper">
         <div class="wrapper">
@@ -42,6 +42,37 @@
             </div>
 
         </div>
+
+
+        
+
+    </div>
+
+
+    <div id="menu" class="menu">
+        <ul class="menu-list">
+            <li class="menu-item menu-row">
+                <img src="img/home.png" alt="Home icon">
+                <a href="#" class="menu-link">Главная</a>
+            </li>
+            <li class="menu-item menu-row">
+                <img src="img/store.png" alt="Store icon">
+                <a href="#" class="menu-link">Товары и услуги</a>
+            </li>
+            <li class="menu-item menu-row">
+                <img src="img/cart.png" alt="Cart icon">
+                <a href="#" class="menu-link">Корзина</a>
+            </li>
+        </ul>
+        <ul class="menu-list">
+            <li class="menu-item"><a href="#" class="menu-link">стеллажи</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">почему мы?</a></li>
+            <li class="menu-item"><a href="#" class="menu-link">контакты</a></li>
+        </ul>
+        <div class="menu-info">
+            <a href="mailto:@safemetall.ru" class="menu-mail">@safemetall.ru</a>
+            <a href="tel:78002007593" class="menu-phone">+7 800 200 75 93</a>
+        </div>
     </div>
 
     <div class="wrapper">
@@ -62,6 +93,21 @@
     </div>
 
 </header>
+
+
+<div id="modal">
+    <div class="modal_wrapper">
+        <h4 class="modal-title">У вас остались вопросы?</h4>
+        <form action="" class="modal-form">
+            <div class="modal-inputs">
+                <input type="text" class="modal-input" placeholder="Ваше имя">
+                <input type="text" class="modal-input" placeholder="Номер телефона">
+            </div>
+            <button class="main-btn filled">жду звонка!</button>
+        </form>
+    </div>
+</div>
+
 
 
 <section id="skills">
@@ -253,63 +299,79 @@
 
             <div class="stages-cards">
 
-                <div class="stages-card">
-                    <div class="stages-img_block">
-                        <img src="img/stages/arms.png" alt="Stage 1" class="stages-card_img">
-                    </div>
-                    <div class="stages-card_content">
-                        <h4 class="stages-card_title">Знакомство</h4>
-                        <p class="stages-card_text">Расскажем о типах складского оборудования.</p>
-                    </div>
-                </div>
-
-                <div class="stages-card">
-                    <div class="stages-img_block">
-                        <img src="img/stages/select.png" alt="Stage 2" class="stages-card_img">
-                    </div>
-                    <div class="stages-card_content">
-                        <h4 class="stages-card_title">Выбор оборудования</h4>
-                        <p class="stages-card_text">Подберем оптимальное решение под ваши задачи.</p>
+                <div class="stages-card_wrapper">
+                    <div class="stages-card">
+                        <div class="stages-img_block">
+                            <img src="img/stages/arms.png" alt="Stage 1" class="stages-card_img">
+                        </div>
+                        <div class="stages-card_content">
+                            <h4 class="stages-card_title">Знакомство</h4>
+                            <p class="stages-card_text">Расскажем о типах складского оборудования.</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="stages-card">
-                    <div class="stages-img_block">
-                        <img src="img/stages/card.png" alt="Stage 3" class="stages-card_img">
-                    </div>
-                    <div class="stages-card_content">
-                        <h4 class="stages-card_title">Оплата</h4>
-                        <p class="stages-card_text">Выставим счет.</p>
-                    </div>
-                </div>
-
-                <div class="stages-card">
-                    <div class="stages-img_block">
-                        <img src="img/stages/car.png" alt="Stage 4" class="stages-card_img">
-                    </div>
-                    <div class="stages-card_content">
-                        <h4 class="stages-card_title">Доставка</h4>
-                        <p class="stages-card_text">Привезем в удобное для вас время и место.</p>
+                <div class="stages-card_wrapper">
+                    <div class="stages-card">
+                        <div class="stages-img_block">
+                            <img src="img/stages/select.png" alt="Stage 2" class="stages-card_img">
+                        </div>
+                        <div class="stages-card_content">
+                            <h4 class="stages-card_title">Выбор оборудования</h4>
+                            <p class="stages-card_text">Подберем оптимальное решение под ваши задачи.</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="stages-card">
-                    <div class="stages-img_block">
-                        <img src="img/stages/montaj.png" alt="Stage 4" class="stages-card_img">
-                    </div>
-                    <div class="stages-card_content">
-                        <h4 class="stages-card_title">Монтаж</h4>
-                        <p class="stages-card_text">Произведем сборку в кратчайшие сроки.</p>
+
+                <div class="stages-card_wrapper">
+                    <div class="stages-card">
+                        <div class="stages-img_block">
+                            <img src="img/stages/card.png" alt="Stage 3" class="stages-card_img">
+                        </div>
+                        <div class="stages-card_content">
+                            <h4 class="stages-card_title">Оплата</h4>
+                            <p class="stages-card_text">Выставим счет.</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="stages-card">
-                    <div class="stages-img_block">
-                        <img src="img/stages/warranty.png" alt="Stage 4" class="stages-card_img">
+
+                <div class="stages-card_wrapper">
+                    <div class="stages-card">
+                        <div class="stages-img_block">
+                            <img src="img/stages/car.png" alt="Stage 4" class="stages-card_img">
+                        </div>
+                        <div class="stages-card_content">
+                            <h4 class="stages-card_title">Доставка</h4>
+                            <p class="stages-card_text">Привезем в удобное для вас время и место.</p>
+                        </div>
                     </div>
-                    <div class="stages-card_content">
-                        <h4 class="stages-card_title">Гарантия</h4>
-                        <p class="stages-card_text">Даем гарантию 24 месяца.</p>
+                </div>
+
+
+                <div class="stages-card_wrapper">
+                    <div class="stages-card">
+                        <div class="stages-img_block">
+                            <img src="img/stages/montaj.png" alt="Stage 4" class="stages-card_img">
+                        </div>
+                        <div class="stages-card_content">
+                            <h4 class="stages-card_title">Монтаж</h4>
+                            <p class="stages-card_text">Произведем сборку в кратчайшие сроки.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="stages-card_wrapper">
+                    <div class="stages-card">
+                        <div class="stages-img_block">
+                            <img src="img/stages/warranty.png" alt="Stage 4" class="stages-card_img">
+                        </div>
+                        <div class="stages-card_content">
+                            <h4 class="stages-card_title">Гарантия</h4>
+                            <p class="stages-card_text">Даем гарантию 24 месяца.</p>
+                        </div>
                     </div>
                 </div>
 
@@ -501,7 +563,7 @@
 
         </div>
     </div>
-</section>-->
+</section>
 
 <!--
 <section id="why">
@@ -636,9 +698,30 @@
     <div class="wrapper">
         <div class="footer_wrapper">
             <div class="footer-row">
-                <ul class="footer-list"></ul>
-                <ul class="footer-list"></ul>
-                <ul class="footer-list"></ul>
+                <div class="footer-list">
+                    <p class="footer-item first-item">КАТАЛОГ ТОВАРОВ</p>
+                    <a href="#" class="footer-item">Стеллажи</a>
+                    <a href="#" class="footer-item">Сейфы</a>
+                    <a href="#" class="footer-item">Верстаки</a>
+                    <a href="#" class="footer-item">Металлическая мебель</a>
+                </div>
+                <div class="footer-list">
+                    <p class="footer-item first-item">ДЛЯ ПОКУПАТЕЛЕЙ</p>
+                    <a href="#" class="footer-item">Личный кабинет</a>
+                    <a href="#" class="footer-item">Доставка и оплата</a>
+                    <a href="#" class="footer-item">Обмен</a>
+                    <a href="#" class="footer-item">Возврат</a>
+                </div>
+                <div class="footer-list">
+                    <p class="footer-item first-item">КОМПАНИЯ «СТЕЛТЕХ»</p>
+                    <a href="#" class="footer-item">О компании</a>
+                    <a href="#" class="footer-item">Контакты</a>
+                    <a href="#" class="footer-item">Блог</a>
+                </div>
+            </div>
+
+            <div class="footer-term">
+                <p class="footer-term-text">2022 OOO "SafeMetall"</p>
             </div>
         </div>
     </div>
