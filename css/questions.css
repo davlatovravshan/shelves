@@ -27,6 +27,7 @@
     border: none;
     border-bottom: 2px solid #FFFFFF;
     padding: 7px 0;
+    color: #fff;
 }
 
 .questions-input::placeholder {

@@ -13,6 +13,15 @@
 </head>
 <body>
 
+<a href="tel:+78002007593" class="call_wrapper">
+    <div class="ring">
+        <div class="coccoc-alo-phone coccoc-alo-green coccoc-alo-show">
+            <div class="coccoc-alo-ph-circle-fill"></div>
+            <div class="coccoc-alo-ph-img-circle"></div>
+        </div>
+    </div>
+</a>
+
 <header id="header">
 
     <div class="header_wrapper">
@@ -95,10 +104,10 @@
 <div id="modal">
     <div class="modal_wrapper">
         <h4 class="modal-title">У вас остались вопросы?</h4>
-        <form action="" class="modal-form">
+        <form class="modal-form form">
             <div class="modal-inputs">
-                <input type="text" class="modal-input" placeholder="Ваше имя">
-                <input type="text" class="modal-input" placeholder="Номер телефона">
+                <input name="name" required type="text" class="modal-input" placeholder="Ваше имя">
+                <input name="phone" required type="text" class="modal-input" placeholder="Номер телефона">
             </div>
             <button class="main-btn filled">жду звонка!</button>
         </form>
@@ -229,13 +238,13 @@
                 </ul>
             </div>
 
-            <div class="order-right">
-                <input type="text" placeholder="Ваш номер телефона" class="order-input">
+            <form class="order-right order-form">
+                <input required type="text" placeholder="Ваш номер телефона" class="order-input">
                 <button class="main-btn filled">заказать замерщика</button>
                 <p class="order-content">
                     Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#">политикой конфиденциальности</a>
                 </p>
-            </div>
+            </form>
 
         </div>
 
@@ -679,10 +688,10 @@
     <div class="wrapper">
         <div class="questions_wrapper">
             <h2 class="questions-title">Возникли вопросы <br><span>по подбору оборудования?</span></h2>
-            <form class="questions-form">
+            <form class="questions-form form">
                 <div class="inputs">
-                    <input type="text" class="questions-input" placeholder="Ваше имя">
-                    <input type="text" class="questions-input" placeholder="Номер телефона">
+                    <input name="name" required type="text" class="questions-input" placeholder="Ваше имя">
+                    <input name="phone" required type="text" class="questions-input" placeholder="Номер телефона">
                 </div>
                 <button class="questions-btn main-btn filled">оставить заявку</button>
             </form>
