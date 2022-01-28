@@ -4,6 +4,22 @@ let menu = document.querySelector('#menu')
 let modal = document.querySelector('#modal')
 let modalWrapper = document.querySelector('.modal_wrapper')
 
+$('.card').click(function() {
+    console.log($('#products'))
+    // window.scrollTo({
+    //     top: $('#products').offset().top - 100,
+    //     behavior: 'smooth',
+    // });
+
+    //$('body').scrollTo('#products')
+
+
+    var element = document.querySelector("#products");
+
+    element.scrollIntoView({ behavior: 'smooth', block: 'start'});
+
+})
+
 menuBurger.addEventListener('click', function() {
     this.classList.toggle('change')
     menu.classList.toggle('active')

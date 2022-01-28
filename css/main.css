@@ -25,6 +25,10 @@ html, body {
     overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ul {
     list-style: none;
 }
@@ -36,6 +40,7 @@ a {
 
 img {
     max-width: 100%;
+    object-fit: cover;
 }
 
 input:focus, button:focus {
@@ -81,6 +86,15 @@ input:focus, button:focus {
 }
 
 
+@media (max-width: 992px) {
+
+    .wrapper {
+        padding: 0 30px;
+    }
+
+}
+
+
 
 @media (max-width: 768px) {
 
@@ -93,8 +107,6 @@ input:focus, button:focus {
         font-size: 14px;
         line-height: 16px;
     }
-
-
 
 
 }
