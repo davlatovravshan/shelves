@@ -119,8 +119,9 @@
 .menu {  
     position: absolute;
     display: none;
+    top: 90px;
     right: 0;
-    z-index: 10;
+    z-index: 99;
     margin-left: auto;
     width: 320px;
     max-width: 320px;
@@ -281,6 +282,11 @@
 
 
 @media (max-width: 768px) {
+
+    .menu {  
+        top: 70px;
+    }
+
     #modal {
         padding: 0 15px;
     }
