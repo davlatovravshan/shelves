@@ -56,47 +56,52 @@ $('.form').on('submit', function(e) {
     console.log(name, phone)
 
 
-    fetch("http://localhost:3030/chat", {
-        method: "POST",
-        body: JSON.stringify({
-            name: name.value, 
-            phone: phone.value
-        }),
-        headers: {
-            "Content-type": "application/json; charset=UTF-8"
-        }
-    })
-    .then(res => res.json())
-    .then(json => {
-        console.log('Response', json)
-        alert('Ваша заявка отправлена администратору!')
-        closeModal()
-    })
-    .catch(err => {
-        alert('Error:', err)
-    })
+    // fetch("http://localhost:3030/chat", {
+    //     method: "POST",
+    //     body: JSON.stringify({
+    //         name: name.value, 
+    //         phone: phone.value
+    //     }),
+    //     headers: {
+    //         "Content-type": "application/json; charset=UTF-8"
+    //     }
+    // })
+    // .then(res => res.json())
+    // .then(json => {
+    //     console.log('Response', json)
+    //     alert('Ваша заявка отправлена администратору!')
+    //     closeModal()
+    // })
+    // .catch(err => {
+    //     alert('Error:', err)
+    // })
 
 
 
-    /*let telegramUrl = 'https://api.telegram.org/bot5238548555:AAEju3aTgwZzhOG_eHDbr3Hti5R851HLULg/sendMessage'
-
+    let telegramUrl = 'https://api.telegram.org/bot5238548555:AAEju3aTgwZzhOG_eHDbr3Hti5R851HLULg/sendMessage'
+    let msg = `
+<b>Name:</b> ${name.value?.trim()}
+<b>Phone:</b> ${phone.value?.trim()}
+`
     $.ajax({
         method: 'POST',
         url: telegramUrl,
         data: {
-            chat_id: 355919981,
+            chat_id: -1001778616370,
             parse_mode: 'html',
             text: msg
         },
         success: function(response) {
             if (response?.status == 200) {
                 console.log('Успешно отправлено!')
+                alert('Ваша заявка отправлена администратору!')
+                closeModal()
             }
         },
         error: function(error) {
-            console.error('Ошибка при отправке', error)
+            alert('Error:', error)
         }
-    })*/
+    })
 
 
 })
